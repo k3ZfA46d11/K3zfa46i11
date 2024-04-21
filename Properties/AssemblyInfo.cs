@@ -1,15 +1,15 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("ContentWarningCheat")]
+[assembly: AssemblyTitle("ContentWarningK3zfa46i11")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("P R C")]
-[assembly: AssemblyProduct("ContentWarningCheat")]
+[assembly: AssemblyProduct("ContentWarningK3zfa46i11")]
 [assembly: AssemblyCopyright("Copyright © P R C 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
