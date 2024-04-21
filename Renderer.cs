@@ -53,3 +53,22 @@ namespace ContentWarningK3zfa46i11
         }
     }
 }
+            Matrix4x4 matrix = GUI.matrix;
+            if (!lineTex)
+                lineTex = new Texture2D(1, 1);
+
+            Color color2 = GUI.color;
+            GUI.color = color;
+            float num = Vector3.Angle(pointB - pointA, Vector2.right);
+
+            if (pointA.y > pointB.y)
+                num = -num;
+
+            GUIUtility.ScaleAroundPivot(new Vector2((pointB - pointA).magnitude, width), new Vector2(pointA.x, pointA.y + 0.5f));
+            GUIUtility.RotateAroundPivot(num, pointA);
+            GUI.DrawTexture(new Rect(pointA.x, pointA.y, 1f, 1f), lineTex);
+            GUI.matrix = matrix;
+            GUI.color = color2;
+        }
+    }
+}
