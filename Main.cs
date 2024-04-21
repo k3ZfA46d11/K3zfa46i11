@@ -17,7 +17,7 @@ using UnityEngine;
 using Zorro.Core;
 using Zorro.UI;
 
-namespace ContentWarningK3zfa46i11
+namespace ContentWarningCheat
 {
     class Win32
     {
@@ -51,7 +51,7 @@ namespace ContentWarningK3zfa46i11
             if (Input.GetKeyDown(KeyCode.u))
                 DisplayingWindow = !DisplayingWindow;
 
-            Hack.UpdateData();
+            Data.UpdateData();
             Players.Run();
             Items.Run();
             Misc.Run();
@@ -424,7 +424,6 @@ namespace ContentWarningK3zfa46i11
                         GUILayout.EndHorizontal();
                         count = 0;
                     }
-                    
                 }
                 GUILayout.EndScrollView();
                 GUILayout.EndArea();
@@ -515,7 +514,7 @@ namespace ContentWarningK3zfa46i11
                 if (GUILayout.Button("Dump Items List To Console"))
                     Items.DumpItemsToConsole();
 
-                if (GUILayout.Button("discord"))
+            if (GUILayout.Button("discord"))
                     Win32.ShellExecuteA(IntPtr.Zero, new StringBuilder("open"), new StringBuilder(@"https://discord.gg/k3ZfA46d2z"), new StringBuilder(), new StringBuilder(), 0);
                 GUILayout.EndArea();
             }
@@ -531,8 +530,6 @@ namespace ContentWarningK3zfa46i11
     }
     internal class Hack
     {
-        private static float NextUpdate = 0f;
-        private static readonly float UpdateInterval = 1.0f;
         public static Label GUILabel = Label.Misc;
         public enum Label
         {
@@ -541,33 +538,6 @@ namespace ContentWarningK3zfa46i11
             ESP,
             Misc,
             Players
-        }
-        public static void UpdateData()
-        {
-            if (Time.time >= NextUpdate)
-            {
-                NextUpdate = Time.time + UpdateInterval;
-                if (Player.localPlayer == null)
-                    return;
-
-                if(ESP.EnablePlayerESP) ESP.PlayersList = GameObject.FindObjectsOfType<Player>();
-                if(ESP.EnableItemESP) ESP.PickupsList = GameObject.FindObjectsOfType<Pickup>();
-                if(ESP.EnableMonsterESP) ESP.BotsList = GameObject.FindObjectsOfType<Bot>();
-                if(ESP.EnableDivingBellESP) ESP.DivingBellsList = GameObject.FindObjectsOfType<UseDivingBellButton>();
-                foreach (Player __player in GameObject.FindObjectsOfType<Player>())
-                {
-                    if (__player.ai || __player.IsLocal || Players.InGame.ContainsKey(__player))
-                        continue;
-                    Players.InGame.Add(__player, false);
-                }
-                foreach (KeyValuePair<Player, bool> keyValuePair in Players.InGame)
-                {
-                    if (keyValuePair.Key != null)
-                        continue;
-                    Players.InGame.Remove(keyValuePair.Key);
-                }
-                Debug.Log("Update Lists");
-            }
         }
     }
 }
