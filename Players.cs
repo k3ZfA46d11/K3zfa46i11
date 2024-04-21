@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using UnityEngine;
 using UnityEngine.LowLevel;
 using static UnityEngine.GraphicsBuffer;
 
-namespace ContentWarningCheat
+namespace ContentWarningK3zfa46i11
 {
     internal class Players
     {
@@ -259,9 +259,7 @@ namespace ContentWarningCheat
     {
         public static List<string> Name = new List<string>
         {
-            //在这里自定义你的滚动昵称
-            "Powered By xiaodo1337.",
-            "此作弊模组免费开源，如果你是购买获得，恭喜你被圈钱了！"
+            
         };
         public static int CurrentNamePos = 0;
         public static float ColorHUE = 0.001f;

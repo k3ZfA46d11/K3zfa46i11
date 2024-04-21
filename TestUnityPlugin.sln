@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content-Warning Cheat", "Content-Warning Cheat.csproj", "{14AA83F7-BAA2-4332-BE81-E878CCF60E56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content-Warning-K3zfa46i11", "Content-Warning-K3zfa46i11.csproj", "{14AA83F7-BAA2-4332-BE81-E878CCF60E56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

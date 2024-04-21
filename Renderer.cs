@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using UnityEngine;
 
-namespace ContentWarningCheat
+namespace ContentWarningK3zfa46i11
 {
     internal class Renderer
     {

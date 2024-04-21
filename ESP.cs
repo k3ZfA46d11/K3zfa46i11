@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 using Zorro.Core;
 
-namespace ContentWarningCheat
+namespace ContentWarningK3zfa46i11
 {
     internal class ESP
     {

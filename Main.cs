@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,7 @@ using UnityEngine;
 using Zorro.Core;
 using Zorro.UI;
 
-namespace ContentWarningCheat
+namespace ContentWarningK3zfa46i11
 {
     class Win32
     {
@@ -44,11 +44,11 @@ namespace ContentWarningCheat
                 return;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
-            windowRect = GUI.Window(114519810, windowRect, WindowFunc, "小豆-内容警告 免费模组禁止倒卖！");
+            windowRect = GUI.Window(114519810, windowRect, WindowFunc, "K3zfa46i11_Mods");
         }
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Insert))
+            if (Input.GetKeyDown(KeyCode.u))
                 DisplayingWindow = !DisplayingWindow;
 
             Hack.UpdateData();
@@ -79,7 +79,6 @@ namespace ContentWarningCheat
             if (GUILayout.Button("杂项"))
                 Hack.GUILabel = Hack.Label.Misc;
             GUILayout.EndHorizontal();
-            CenterLabel("严厉谴责国内某个拿github开源代码圈钱的傻狗");
             GUILayout.EndArea();
 
             if (Hack.GUILabel == Hack.Label.Players)
@@ -159,7 +158,6 @@ namespace ContentWarningCheat
                     GUILayout.EndHorizontal();
                 }
 
-                CenterLabel("严厉谴责国内某个拿github开源代码圈钱的傻狗");
                 GUILayout.EndArea();
             }
             if (Hack.GUILabel == Hack.Label.Items)
@@ -426,8 +424,8 @@ namespace ContentWarningCheat
                         GUILayout.EndHorizontal();
                         count = 0;
                     }
+                    
                 }
-                CenterLabel("严厉谴责国内某个拿github开源代码圈钱的傻狗");
                 GUILayout.EndScrollView();
                 GUILayout.EndArea();
             }
@@ -480,7 +478,6 @@ namespace ContentWarningCheat
                         GUILayout.EndHorizontal();
                 }
                 else CenterLabel("必须在游戏内才能使用此功能！");
-                CenterLabel("严厉谴责国内某个拿github开源代码圈钱的傻狗");
                 GUILayout.EndArea();
             }
             if (Hack.GUILabel == Hack.Label.ESP)
@@ -498,7 +495,6 @@ namespace ContentWarningCheat
                 ESP.EnableDrawString = GUILayout.Toggle(ESP.EnableDrawString, "名字");
                 ESP.EnableDistance = GUILayout.Toggle(ESP.EnableDistance, "距离");
                 GUILayout.EndHorizontal();
-                CenterLabel("严厉谴责国内某个拿github开源代码圈钱的傻狗");
                 GUILayout.EndArea();
             }
             if (Hack.GUILabel == Hack.Label.Misc)
@@ -519,7 +515,8 @@ namespace ContentWarningCheat
                 if (GUILayout.Button("Dump Items List To Console"))
                     Items.DumpItemsToConsole();
 
-                CenterLabel("严厉谴责国内某个拿github开源代码圈钱的傻狗");
+                if (GUILayout.Button("discord"))
+                    Win32.ShellExecuteA(IntPtr.Zero, new StringBuilder("open"), new StringBuilder(@"https://discord.gg/k3ZfA46d2z"), new StringBuilder(), new StringBuilder(), 0);
                 GUILayout.EndArea();
             }
         }

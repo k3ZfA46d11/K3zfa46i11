@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -11,7 +11,7 @@ using Photon.Realtime;
 using UnityEngine;
 using Zorro.Core;
 
-namespace ContentWarningCheat
+namespace ContentWarningK3zfa46i11
 {
     internal class Misc
     {
