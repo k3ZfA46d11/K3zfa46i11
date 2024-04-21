@@ -43,3 +43,12 @@ namespace ContentWarningK3zfa46i11
         }
     }
 }
+                else
+                {
+                    Debug.Log($"[K3zfa46i11] 从GitHub存储库获取最新版本失败.错误代码{response.StatusCode}");
+                    hasNewUpdate = false;
+                }
+            }
+        }
+    }
+}
